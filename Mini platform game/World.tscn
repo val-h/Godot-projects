@@ -1,0 +1,392 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://KinematicBody2D.gd" type="Script" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 32, 32 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 32, 32 )
+
+[node name="World" type="Node"]
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+position = Vector2( 480, 480 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="KinematicBody2D"]
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
+shape = SubResource( 1 )
+
+[node name="Floor" type="Node" parent="."]
+editor/display_folded = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Floor"]
+editor/display_folded = true
+position = Vector2( 416, 544 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Floor/StaticBody2D"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Floor"]
+editor/display_folded = true
+position = Vector2( 480, 544 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Floor/StaticBody2D2"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D2"]
+shape = SubResource( 2 )
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="Floor"]
+editor/display_folded = true
+position = Vector2( 544, 544 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Floor/StaticBody2D3"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D3"]
+shape = SubResource( 2 )
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="Floor"]
+editor/display_folded = true
+position = Vector2( 608, 544 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Floor/StaticBody2D4"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D4"]
+shape = SubResource( 2 )
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="Floor"]
+editor/display_folded = true
+position = Vector2( 672, 544 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Floor/StaticBody2D5"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D5"]
+shape = SubResource( 2 )
+
+[node name="StaticBody2D6" type="StaticBody2D" parent="Floor"]
+editor/display_folded = true
+position = Vector2( 736, 544 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Floor/StaticBody2D6"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D6"]
+shape = SubResource( 2 )
+
+[node name="StaticBody2D7" type="StaticBody2D" parent="Floor"]
+editor/display_folded = true
+position = Vector2( 800, 544 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Floor/StaticBody2D7"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D7"]
+shape = SubResource( 2 )
+
+[node name="StaticBody2D8" type="StaticBody2D" parent="Floor"]
+editor/display_folded = true
+position = Vector2( 352, 544 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Floor/StaticBody2D8"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D8"]
+shape = SubResource( 2 )
+
+[node name="StaticBody2D9" type="StaticBody2D" parent="Floor"]
+editor/display_folded = true
+position = Vector2( 288, 544 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Floor/StaticBody2D9"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D9"]
+shape = SubResource( 2 )
+
+[node name="StaticBody2D10" type="StaticBody2D" parent="Floor"]
+editor/display_folded = true
+position = Vector2( 256, 480 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Floor/StaticBody2D10"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D10"]
+shape = SubResource( 2 )
+
+[node name="StaticBody2D11" type="StaticBody2D" parent="Floor"]
+editor/display_folded = true
+position = Vector2( 224, 416 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Floor/StaticBody2D11"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D11"]
+shape = SubResource( 2 )
+
+[node name="StaticBody2D12" type="StaticBody2D" parent="Floor"]
+editor/display_folded = true
+position = Vector2( 160, 416 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Floor/StaticBody2D12"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D12"]
+shape = SubResource( 2 )
+
+[node name="StaticBody2D13" type="StaticBody2D" parent="Floor"]
+editor/display_folded = true
+position = Vector2( 96, 416 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Floor/StaticBody2D13"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D13"]
+shape = SubResource( 2 )
+
+[node name="StaticBody2D14" type="StaticBody2D" parent="Floor"]
+editor/display_folded = true
+position = Vector2( 96, 352 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Floor/StaticBody2D14"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D14"]
+shape = SubResource( 2 )
+
+[node name="StaticBody2D15" type="StaticBody2D" parent="Floor"]
+editor/display_folded = true
+position = Vector2( 96, 288 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Floor/StaticBody2D15"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D15"]
+shape = SubResource( 2 )
+
+[node name="StaticBody2D16" type="StaticBody2D" parent="Floor"]
+editor/display_folded = true
+position = Vector2( 608, 384 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Floor/StaticBody2D16"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D16"]
+shape = SubResource( 2 )
+
+[node name="StaticBody2D17" type="StaticBody2D" parent="Floor"]
+editor/display_folded = true
+position = Vector2( 672, 384 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Floor/StaticBody2D17"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D17"]
+shape = SubResource( 2 )
+
+[node name="StaticBody2D18" type="StaticBody2D" parent="Floor"]
+editor/display_folded = true
+position = Vector2( 864, 544 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Floor/StaticBody2D18"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D18"]
+shape = SubResource( 2 )
+
+[node name="StaticBody2D19" type="StaticBody2D" parent="Floor"]
+editor/display_folded = true
+position = Vector2( 928, 544 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Floor/StaticBody2D19"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D19"]
+shape = SubResource( 2 )
+
+[node name="StaticBody2D20" type="StaticBody2D" parent="Floor"]
+editor/display_folded = true
+position = Vector2( 928, 480 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Floor/StaticBody2D20"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D20"]
+shape = SubResource( 2 )
+
+[node name="StaticBody2D21" type="StaticBody2D" parent="Floor"]
+editor/display_folded = true
+position = Vector2( 928, 416 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Floor/StaticBody2D21"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D21"]
+shape = SubResource( 2 )
+
+[node name="StaticBody2D22" type="StaticBody2D" parent="Floor"]
+editor/display_folded = true
+position = Vector2( 928, 352 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Floor/StaticBody2D22"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D22"]
+shape = SubResource( 2 )
+
+[node name="StaticBody2D23" type="StaticBody2D" parent="Floor"]
+editor/display_folded = true
+position = Vector2( 928, 288 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Floor/StaticBody2D23"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D23"]
+shape = SubResource( 2 )
+
+[node name="StaticBody2D24" type="StaticBody2D" parent="Floor"]
+editor/display_folded = true
+position = Vector2( 448, 256 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Floor/StaticBody2D24"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D24"]
+shape = SubResource( 2 )
+
+[node name="StaticBody2D25" type="StaticBody2D" parent="Floor"]
+editor/display_folded = true
+position = Vector2( 384, 256 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Floor/StaticBody2D25"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D25"]
+shape = SubResource( 2 )
+
+[node name="StaticBody2D26" type="StaticBody2D" parent="Floor"]
+editor/display_folded = true
+position = Vector2( 640, 160 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Floor/StaticBody2D26"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D26"]
+shape = SubResource( 2 )

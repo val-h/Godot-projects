@@ -1,0 +1,9 @@
+[gd_scene format=2]
+
+[node name="First \'game\'" type="Label"]
+margin_left = 213.562
+margin_top = 76.6043
+margin_right = 289.562
+margin_bottom = 90.6043
+rect_scale = Vector2( 1.00484, 1 )
+text = "Hello World"
